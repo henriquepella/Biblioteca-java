@@ -1,0 +1,23 @@
+# =========================================================================
+#  ARQUIVO DE EXEMPLO DE CONFIGURAÇÃO
+#  Copie este arquivo para "config.properties" (mesma pasta) e preencha
+#  com as suas credenciais. O config.properties real NÃO é versionado
+#  (está no .gitignore) para não expor senhas no GitHub.
+#
+#  Copiar (PowerShell):
+#    Copy-Item src/main/resources/config.properties.example src/main/resources/config.properties
+# =========================================================================
+
+# ===== Conexão com o banco (MySQL 8+) =====
+db.url=jdbc:mysql://localhost:3306/biblioteca?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Sao_Paulo&characterEncoding=UTF-8
+db.user=root
+db.password=COLOQUE_SUA_SENHA_AQUI
+db.driver=com.mysql.cj.jdbc.Driver
+
+# ===== Parâmetros de negócio (regras ajustáveis sem recompilar) =====
+# Prazo padrão de devolução, em dias
+emprestimo.prazoDias=14
+# Valor da multa por dia de atraso (R$)
+emprestimo.multaPorDia=1.00
+# Máximo de empréstimos ativos que um membro pode ter ao mesmo tempo
+emprestimo.limiteAtivosPorMembro=3

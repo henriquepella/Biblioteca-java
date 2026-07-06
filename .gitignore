@@ -1,0 +1,31 @@
+# ===== Build / compilados =====
+target/
+build/
+out/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== Configuração sensível (NÃO versionar credenciais) =====
+# O arquivo real fica de fora; versione apenas o config.properties.example
+src/main/resources/config.properties
+config.properties
+
+# ===== IDEs =====
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+nb-configuration.xml
+
+# ===== Sistema Operacional =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== Logs =====
+*.log
+logs/
