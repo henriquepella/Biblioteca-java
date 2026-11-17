@@ -1,12 +1,13 @@
-# 📚 Sistema de Gerenciamento de Biblioteca (Java + JDBC + MySQL)
+# 📚 Sistema de Gerenciamento de Biblioteca (Java, em construção)
 
 Sistema de console (linha de comando) para gerenciar **livros**, **usuários**
 (funcionários e membros) e **empréstimos**, com persistência em banco de dados
 relacional via **JDBC puro** (sem ORM) e arquitetura em camadas **MVC + DAO**.
 
 > 🚧 **Projeto em construção — entregue camada por camada.**
-> Já concluído: estrutura Maven, scripts de banco (`schema.sql` + `seed.sql`),
-> `.gitignore` e configuração externa.
+> Já concluído: estrutura Maven, entidades com POO (`model/`), classe de conexão (`util/`),
+> scripts de banco (`schema.sql` + `seed.sql`), `.gitignore` e configuração externa.
+> Próximas etapas: DAOs com JDBC e MySQL, serviços, menus e `Main`.
 
 ---
 
@@ -21,7 +22,7 @@ relacional via **JDBC puro** (sem ORM) e arquitetura em camadas **MVC + DAO**.
 
 ---
 
-## 🧰 Stack técnica
+## 🧰 Stack técnica (planejada)
 
 - **Java 17+** (LTS)
 - **MySQL 8+**
